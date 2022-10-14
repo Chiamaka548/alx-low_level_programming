@@ -13,7 +13,7 @@ int main(void)
 	{
 		for (i = '0'; i <= '9'; i++)
 		{
-			for (u = '0'; u = '9'; u++)
+			for (u = '0'; u <= '9'; u++)
 			{
 				if (c < i && i < u)
 				{
