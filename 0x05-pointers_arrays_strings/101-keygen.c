@@ -8,27 +8,20 @@
  * Description: Generates random valid passwords for the program 101-crackme
  * Return: Always 0
  */
+
 int main(void)
 {
-	int sum, i, r;
-
-	char decode[27] = "abcdefghijklmnopqrstuvwxyz";
-	char key[30];
-
-	sum = 0;
-	i = 0;
+	int sum;
+	char c;
 
 	srand(time(NULL));
-
-	while (sum < 2772)
+	while (sum <= 2645)
 	{
-		r = rand() % 10;
-		key[i] = decode[r];
-		sum += key[i];
-		i++;
+		c = rand() % 128;
+		sum += c;
+		putchar(c);
 	}
-	r = 2772 - sum;
-	key[i] = r;
-	printf("%s\n", key);
+	putchar(2772 - sum);
 	return (0);
 }
+
