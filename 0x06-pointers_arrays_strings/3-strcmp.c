@@ -41,8 +41,7 @@ int _strcmp(char *s1, char *s2)
 		else
 		{
 			y = s1[x] - s2[x];
-			breat
-				k;
+			break;
 		}
 
 		x++;
