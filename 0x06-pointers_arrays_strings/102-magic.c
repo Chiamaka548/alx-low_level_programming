@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+ * main - This code adds one line of code so that the program prints a[2] = 98
+ * Description: This program makes magic happen.
+ *
+ * Return: void
+ */
+
 int main(void)
 {
 	int n;
@@ -18,7 +25,7 @@ int main(void)
  * - only one statement
  * - you are not allowed to code anything else than this line of code
  */
-	*(p + 5) = 98;
+	(p + 5) = 98;
 /* ...so that this prints 98\n */
 	printf("a[2] = %d\n", a[2]);
 	return (0);
