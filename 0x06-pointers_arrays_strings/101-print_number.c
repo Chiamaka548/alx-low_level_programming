@@ -2,22 +2,22 @@
 
 /**
  * print_number - Prints any integer with putchar
- * @x: Number to print
+ * @n: Number to print
  *
  * Return: Nothing
  */
 
-void print_number(int x)
+void print_number(int n)
 {
 	unsigned int a;
 
-	if (x < 0)
+	if (n < 0)
 	{
 		_putchar('-');
-		x *= -1;
+		n *= -1;
 	}
 
-	a = x;
+	a = n;
 
 	if (a / 10)
 		print_number(a / 10);
