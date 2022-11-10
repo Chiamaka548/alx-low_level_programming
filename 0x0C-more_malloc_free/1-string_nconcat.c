@@ -3,7 +3,7 @@
 /**
  * string_nconcat - a function that concatenates two strings.
  * @s1: first char
- * @s2: secound char
+ * @s2: second char
  * @n: unsigned int
  *
  * Return: If the function fails, it should return NULL
@@ -20,7 +20,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		for (x = 0; s1[x]; ++x);
+		for (x = 0; s1[x]; ++x)
+			;
 	}
 	if (s2 == NULL)
 	{
@@ -28,7 +29,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		for (y = 0; s2[y]; ++y);
+		for (y = 0; s2[y]; ++y)
+			;
 	}
 	if (y > n)
 		y = n;
